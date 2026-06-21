@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VANTAGE — Викуп вантажівок по всій Україні</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__name">VANTAGE</span>
+        <span class="logo__badge">UA_BUYOUT</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#process" class="nav__link">Як працюємо</a>
+        <a href="#geography" class="nav__link">Географія</a>
+        <a href="#trust" class="nav__link">Довіра</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="header__right">
+        <a href="tel:+380671234567" class="header__phone">+38 (067) 123 45 67</a>
+        <a href="#hero-form" class="btn btn--primary header__cta">Оцінити фуру</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <!-- Background overlay for the truck image -->
+      <div class="hero__bg" style="background-image: url('/images/6d8d1c79-a9be-49f3-bc4c-ebc51732faf6.png');"></div>
+      
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <p class="hero__tag">№ 1 викуп вантажівок в Україні</p>
+          <h1 class="hero__title">
+            <span class="hero__title-line hero__title-line--inline">
+              Продайте свій
+            </span>
+            <span class="hero__title-line hero__title-line--outline">
+              <span class="hero__title-outline">Тягач</span>
+            </span>
+            <span class="hero__title-line hero__title-line--shift">за 1 день</span>
+          </h1>
+          <p class="hero__desc">
+            Займаємося викупом вантажного транспорту та напівпричепів у будь-якому вигляді по всій Україні. Дізнайтеся ціну вашого авто всього за 15 хвилин.<br><br>
+            Усі фінансові питання вирішуємо на місці: виплата всієї суми виключно готівкою в момент передачі ключів.
+          </p>
+        </div>
+
+        <form class="hero__form" id="hero-form">
+          <div class="hero__form-header">
+            <h3 class="hero__form-title">Отримайте оцінку</h3>
+            <p class="hero__form-subtitle">Заповніть форму — ми передзвонимо<br>та назвемо ціну вже за 15 хвилин</p>
+          </div>
+          
+          <label class="field">
+            <select class="field__select">
+              <option value="" disabled selected hidden>Марка вантажівки</option>
+              <option>Mercedes</option>
+              <option>Renault</option>
+              <option>DAF</option>
+            </select>
+          </label>
+          <label class="field">
+            <select class="field__select">
+              <option value="" disabled selected hidden>Рік випуску</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>Старіше 2010</option>
+            </select>
+          </label>
+          <label class="field">
+            <input type="text" placeholder="Пробіг, км" class="field__input" />
+          </label>
+          <label class="field field--phone">
+            <span class="field__label-inside">Ваш телефон</span>
+            <div class="field__phone-wrap">
+              <span class="field__prefix">+38</span>
+              <input type="tel" placeholder="( _ _ _ ) _ _ _ - _ _ - _ _" class="field__input field__input--phone" required />
+            </div>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full hero__form-btn">ОТРИМАТИ ОЦІНКУ</button>
+          <p class="hero__form-note">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Ваші дані захищені
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stats__item" data-animate="stat">
+          <div class="stats__value"><span data-count="1400">0</span>+</div>
+          <p class="stats__label">Куплених тягачів<br>по всій країні</p>
+        </div>
+        <div class="stats__item" data-animate="stat">
+          <div class="stats__value">24/7</div>
+          <p class="stats__label">Працюємо без вихідних<br>та свят</p>
+        </div>
+        <div class="stats__item stats__item--accent" data-animate="stat">
+          <div class="stats__value">₴<span data-count="8.2" data-decimal="true">0</span></div>
+          <div class="stats__value-sub">млрд</div>
+          <p class="stats__label">Виплачено власникам<br>техніки</p>
+        </div>
+        <div class="stats__item" data-animate="stat">
+          <div class="stats__value"><span data-count="24">0</span> <span class="stats__unit">області</span></div>
+          <p class="stats__label">Покриваємо<br>всю Україну</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands" id="brands">
+      <p class="brands__top">Купуємо будь-які бренди вантажівок</p>
+      <div class="brands__logos">
+        <span>SCANIA</span><span>MAN</span><span>VOLVO</span><span>DAF</span>
+        <span>RENAULT</span><span>MERCEDES</span><span>IVECO</span><span>FORD</span>
+      </div>
+      <p class="brands__bot">+ напівпричепи, рефрижератори, самоскиди, бортові, тенти</p>
+    </section>
+
+    <section class="process" id="process">
+      <div class="process__watermark" data-parallax="watermark">PROCESS</div>
+      <div class="container">
+        <h2 class="section-title section-title--left">Як ми працюємо</h2>
+        <p class="process__desc">
+          Простий і прозорий процес — від першого дзвінка до грошей на рахунку за один день.
+        </p>
+        <div class="process__box">
+          <div class="process__step" data-animate="step">
+            <span class="process__num">01</span>
+            <h3 class="process__name">Заявка</h3>
+            <p class="process__text">Залишаєте дані про техніку на сайті або телефонуєте нам напряму.</p>
+          </div>
+          <div class="process__step" data-animate="step">
+            <span class="process__num">02</span>
+            <h3 class="process__name">Оцінка</h3>
+            <p class="process__text">Наш експерт виїжджає до вас у будь-яку точку України протягом дня.</p>
+          </div>
+          <div class="process__step" data-animate="step">
+            <span class="process__num">03</span>
+            <h3 class="process__name">Оформлення</h3>
+            <p class="process__text">Умови та оформлення підбираємо індивідуально під вас.</p>
+          </div>
+          <div class="process__step" data-animate="step">
+            <span class="process__num">04</span>
+            <h3 class="process__name">Виплата</h3>
+            <p class="process__text">Отримуєте повну суму готівкою одразу на місці після підписання.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="geography" id="geography">
+      <div class="container geography__wrapper">
+        <div class="geography__content">
+          <h2 class="section-title section-title--left">Працюємо по всій Україні</h2>
+          <p class="geography__desc">
+            Купуємо тягачі та вантажівки у будь-якому стані та регіоні. Виїзд експерта, точна оцінка та виплата коштів одразу на місці.
+          </p>
+          <ul class="geography__facts">
+            <li>
+              <span class="geography__fact-val">24 / 24</span>
+              <span class="geography__fact-text">області</span>
+            </li>
+            <li>
+              <span class="geography__fact-val">Безкоштовний</span>
+              <span class="geography__fact-text">виїзд експерта до вас</span>
+            </li>
+            <li>
+              <span class="geography__fact-val">Оплата</span>
+              <span class="geography__fact-text">в день угоди</span>
+            </li>
+          </ul>
+        </div>
+        <div class="geography__map-container" id="ukraine-map-container">
+          <!-- SVG injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch('/images/ukraine-map.svg')
+        .then(res => res.text())
+        .then(svg => {
+          const container = document.getElementById('ukraine-map-container');
+          container.innerHTML = svg + `
+            <div id="map-tooltip" class="map-tooltip" style="opacity: 0;">
+              <div class="map-tooltip__title" id="map-tooltip-title">Київська обл.</div>
+              <div class="map-tooltip__text">Виїзд сьогодні</div>
+              <div class="map-tooltip__text">Оцінка за 15 хв</div>
+            </div>
+          `;
+          
+          // Animation logic for tooltip
+          const dots = [
+            { id: 'kyiv', name: 'Київська обл.' },
+            { id: 'lviv', name: 'Львівська обл.' },
+            { id: 'odesa', name: 'Одеська обл.' },
+            { id: 'kharkiv', name: 'Харківська обл.' },
+            { id: 'dnipro', name: 'Дніпропетровська обл.' }
+          ];
+          
+          const tooltip = document.getElementById('map-tooltip');
+          const title = document.getElementById('map-tooltip-title');
+          let currentIndex = 0;
+
+          function activateNext() {
+            const svgSvg = container.querySelector('svg');
+            if (!svgSvg) return;
+            
+            // remove active class from all
+            document.querySelectorAll('.map-dot-group').forEach(el => el.classList.remove('active-dot'));
+            
+            const current = dots[currentIndex];
+            // The id of the dot group might not exist, but we placed the transform in the group.
+            // Let's find the dot group based on its index (we added them in the same order)
+            const dotGroups = document.querySelectorAll('.map-dot-group');
+            if (dotGroups.length > currentIndex) {
+              const activeGroup = dotGroups[currentIndex];
+              activeGroup.classList.add('active-dot');
+              
+              // Get coordinates to position tooltip
+              const ctm = activeGroup.getCTM();
+              const pt = svgSvg.createSVGPoint();
+              pt.x = 0; pt.y = 0;
+              const pos = pt.matrixTransform(ctm);
+              
+              // Set tooltip position and text
+              title.textContent = current.name;
+              tooltip.style.left = (pos.x + 15) + 'px';
+              tooltip.style.top = (pos.y - 30) + 'px';
+              tooltip.style.opacity = '1';
+            }
+            
+            currentIndex = (currentIndex + 1) % dots.length;
+          }
+          
+          setTimeout(() => {
+            activateNext();
+            setInterval(activateNext, 3000);
+          }, 2500); // Wait for initial drawLine animations
+        });
+    </script>
+
+    <section class="trust" id="trust">
+      <div class="container">
+        <p class="section-tag">Чому нам довіряють</p>
+        <h2 class="section-title section-title--left">Прозорість на кожному кроці</h2>
+        <div class="trust__grid">
+          <div class="trust__cell">
+            <h3>Індивідуальні умови угоди</h3>
+            <p>Працюємо індивідуально з кожним клієнтом. Самостійно вирішуємо всі організаційні питання, підлаштовуючись під ваші побажання щодо формату та умов передачі техніки.</p>
+          </div>
+          <div class="trust__cell">
+            <h3>Купівля техніки у будь-якому вигляді</h3>
+            <p>Викуповуємо вантажівки та тягачі в будь-якому технічному стані: від робочих машин із пробігом до аварійних, не на ходу чи після ДТП. Знаходимо індивідуальні рішення для нестандартних ситуацій.</p>
+          </div>
+          <div class="trust__cell">
+            <h3>Організація транспортування</h3>
+            <p>Повністю беремо на себе логістику та вивезення техніки з будь-якого регіону. Вам не потрібно турбуватися про пошук трала чи доставку — ми все організуємо самі.</p>
+          </div>
+          <div class="trust__cell">
+            <h3>Чесна ціна та оплата готівкою</h3>
+            <p>Пропонуємо до 10–25% більше, ніж звичайні перекупники. Оцінюємо за реальним станом автомобіля та виплачуємо всю суму готівкою одразу на місці під час передачі техніки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__head">
+          <h2 class="section-title section-title--left">Відгуки власників</h2>
+          <span class="reviews__stat">300+ угод за минулий рік</span>
+        </div>
+        <div class="reviews__grid">
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Продав свій тягач за 2 дні. Приїхали в Стрий, оглянули, дали справедливу ціну. Розрахувались відразу готівкою на місці.</p>
+            <div class="reviews__meta">
+              <strong>Сергій М.</strong>
+              <span>Власник, м. Львів</span>
+            </div>
+            <span class="reviews__vehicle">DAF XF 105, 2012</span>
+          </article>
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Здавав одразу 2 машини після оновлення парку. Швидко домовились про умови, приїхав експерт, оглянув і передав всю суму на руки.</p>
+            <div class="reviews__meta">
+              <strong>Ігор П.</strong>
+              <span>ФОП, м. Київ</span>
+            </div>
+            <span class="reviews__vehicle">MERCEDES ACTROS, 2016</span>
+          </article>
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Тягач стояв після аварії, ніхто не хотів брати. Хлопці оглянули по фото, приїхали зі своїм тралом, забрали і заплатили готівкою. Дуже виручили.</p>
+            <div class="reviews__meta">
+              <strong>Олександр К.</strong>
+              <span>Приватна особа, м. Одеса</span>
+            </div>
+            <span class="reviews__vehicle">RENAULT PREMIUM, 2014 (після ДТП)</span>
+          </article>
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Дуже зручний і швидкий підхід. Оцінили по фотографіях через месенджер, ціна влаштувала. Через кілька годин зустрілись, оглянули і розрахувались.</p>
+            <div class="reviews__meta">
+              <strong>Микола В.</strong>
+              <span>ФОП, Житомир</span>
+            </div>
+            <span class="reviews__vehicle">DAF CF, 2015</span>
+          </article>
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Продавали стареньку фуру. Думав, будуть сильно збивати ціну, але все пройшло чесно. Обговорили умови, отримав гроші готівкою і передав ключі.</p>
+            <div class="reviews__meta">
+              <strong>Андрій Р.</strong>
+              <span>Власник, Полтава</span>
+            </div>
+            <span class="reviews__vehicle">RENAULT MAGNUM, 2008</span>
+          </article>
+          <article class="reviews__card" data-animate="review">
+            <p class="reviews__quote">Змінював напрямок бізнесу, треба було терміново продати машину. Запропонували гарну ціну, приїхали того ж дня, виплатили готівкою на місці.</p>
+            <div class="reviews__meta">
+              <strong>Віктор С.</strong>
+              <span>ФОП, м. Дніпро</span>
+            </div>
+            <span class="reviews__vehicle">MERCEDES ATEGO, 2011</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="section-tag section-tag--light">Часті питання</p>
+        <h2 class="section-title section-title--light section-title--left">Запитували — відповідаємо</h2>
+        <div class="faq__list">
+          <details class="faq__item" data-animate="faq">
+            <summary><span class="faq__num">01</span> Чи купуєте техніку, яка в кредиті або лізингу?</summary>
+            <p>Ні, техніку з лізинговими чи кредитними обтяженнями ми не викуповуємо. Проте ми розглядаємо будь-які інші варіанти у різному технічному стані: після ДТП, несправні, некомплектні або розібрані вантажівки та напівпричепи.</p>
+          </details>
+          <details class="faq__item" data-animate="faq">
+            <summary><span class="faq__num">02</span> Що робити, якщо фура не на ходу?</summary>
+            <p>Вам не потрібно шукати трал чи самостійно організовувати доставку. Ми повністю беремо на себе логістику та вивезення техніки з будь-якого регіону України — самі знайдемо транспорт і заберемо машину з вашої бази чи майданчика.</p>
+          </details>
+          <details class="faq__item" data-animate="faq">
+            <summary><span class="faq__num">03</span> Як ви визначаєте ціну?</summary>
+            <p>Ви надсилаєте нам фото чи описуєте стан техніки телефоном, і ми озвучуємо орієнтовну вартість уже за 15 хвилин. Фінальну суму узгоджуємо біля авто, оцінюючи реальний стан без штучного заниження ціни та зайвих паперових процедур.</p>
+          </details>
+          <details class="faq__item" data-animate="faq">
+            <summary><span class="faq__num">04</span> Чи можна продати без техпаспорта?</summary>
+            <p>Кожну таку ситуацію ми розглядаємо в індивідуальному порядку. Оскільки ми підбираємо гнучкі умови під кожного клієнта і працюємо без бюрократичної тяганини, зателефонуйте або напишіть нам — ми обговоримо ваш випадок і знайдемо рішення.</p>
+          </details>
+          <details class="faq__item" data-animate="faq">
+            <summary><span class="faq__num">05</span> Як швидко я отримаю гроші?</summary>
+            <p>Усі фінансові питання вирішуються безпосередньо під час зустрічі. Експерт безкоштовно приїде до вас у будь-яку точку України, проведе огляд, і ви отримаєте всю суму виключно готівкою на місці — у момент передачі ключів, без банківських переказів чи затримок.</p>
+          </details>
+        </div>
+        <div class="faq__cta" data-animate="fade-up">
+          <div class="faq__cta-text">
+            <p class="section-tag section-tag--light">ПРАЦЮЄМО ПО ВСІЙ УКРАЇНІ 24/7</p>
+            <p class="faq__cta-heading">ХОЧЕТЕ ПРОДАТИ ВАНТАЖІВКУ? ЗАТЕЛЕФОНУЙТЕ НАМ</p>
+          </div>
+          <a href="tel:+380671234567" class="btn btn--primary btn--large">+38 (067) 123 45 67</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__name">VANTAGE</span>
+          <span class="logo__badge">UA_BUYOUT</span>
+        </a>
+        <p>Прямий викуп комерційного транспорту по всій Україні без посередників. Пропонуємо швидку оцінку, гнучкі умови та розрахунок готівкою одразу на місці.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <a href="tel:+380671234567" class="footer__phone">+38 (067) 123 45 67</a>
+        <span>Цілодобово, без вихідних</span>
+      </div>
+      <div class="footer__col">
+        <h4>Месенджери</h4>
+        <a href="#">Viber</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2024 VANTAGE TRUCK BUYOUT. Всі права захищені. Юридично чистий викуп та оформлення.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-container">
+    <div class="fab-menu">
+      <a href="#" class="fab-item fab-vb" aria-label="Viber">
+        <span class="fab-label">Viber</span>
+        <div class="fab-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
+        </div>
+      </a>
+      <a href="#" class="fab-item fab-wa" aria-label="WhatsApp">
+        <span class="fab-label">WhatsApp</span>
+        <div class="fab-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M16.5 14c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.1.2-.3.2-.6.1-1.3-.6-2.5-1.5-3.3-2.6-.1-.2 0-.3.1-.4.1-.1.3-.3.4-.5.1-.2.2-.3.1-.5s-.8-2-1.1-2.4c-.2-.4-.4-.3-.6-.3h-.5c-.2 0-.6.1-.9.3-.8.8-1 2.2-.2 3.6 1.4 2.5 3.5 4.3 6.1 5.3.6.2 1.2.3 1.8.4.6 0 1.2-.1 1.6-.4.5-.3.8-.8 1-1.3.1-.3.1-.6 0-.6z"/></svg>
+        </div>
+      </a>
+      <a href="tel:+380671234567" class="fab-item fab-call" aria-label="Зателефонувати">
+        <span class="fab-label">Зателефонувати</span>
+        <div class="fab-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+      </a>
+    </div>
+    <button class="fab-toggle" aria-label="Відкрити меню">
+      <svg class="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
