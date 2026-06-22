@@ -71,14 +71,18 @@ img { display: block; max-width: 100%; }
   font-style: italic;
   letter-spacing: -0.02em;
 }
-.logo__badge {
-  font-family: var(--mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 4px 8px;
+.logo__desc {
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .logo__desc {
+    display: none;
+  }
 }
 
 /* Header */
