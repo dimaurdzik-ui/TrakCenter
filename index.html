@@ -199,7 +199,9 @@
     </section>
 
     <script>
-      fetch('/images/ukraine-map.svg')
+      // Detect base path for GitHub Pages compatibility
+      const basePath = document.querySelector('script[src*="assets/"]')?.src.replace(/assets\/.*$/, '') || '/';
+      fetch(basePath + 'images/ukraine-map.svg')
         .then(res => res.text())
         .then(svg => {
           const container = document.getElementById('ukraine-map-container');
