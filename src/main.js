@@ -122,13 +122,46 @@ gsap.from('[data-animate="faq"]', {
 });
 
 // Form submit
-document.querySelector('.hero__form')?.addEventListener('submit', (e) => {
+document.querySelector('.hero__form')?.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const btn = e.target.querySelector('button');
+  const form = e.target;
+  const btn = form.querySelector('button');
   const orig = btn.textContent;
-  btn.textContent = 'Дякуємо! Ми зв\'яжемось';
-  btn.style.background = '#22c55e';
-  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; e.target.reset(); }, 3000);
+  
+  btn.textContent = 'Відправляємо...';
+  btn.disabled = true;
+
+  try {
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Prefix phone with +38 if not present in the value since it's hardcoded in the UI
+    if (data.phone && !data.phone.startsWith('+38')) {
+      data.phone = '+38 ' + data.phone;
+    }
+
+    await fetch('https://trakcenter-backend.vercel.app/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    btn.textContent = 'Дякуємо! Ми зв\'яжемось';
+    btn.style.background = '#22c55e';
+  } catch (error) {
+    console.error('Error sending form:', error);
+    btn.textContent = 'Помилка';
+    btn.style.background = '#ef4444';
+  }
+
+  setTimeout(() => { 
+    btn.textContent = orig; 
+    btn.style.background = ''; 
+    btn.disabled = false;
+    form.reset(); 
+  }, 3000);
 });
 
 // Smooth anchors

@@ -60,7 +60,7 @@
           </div>
           
           <label class="field">
-            <select class="field__select">
+            <select name="brand" class="field__select">
               <option value="" disabled selected hidden>Марка вантажівки</option>
               <option>Mercedes</option>
               <option>Renault</option>
@@ -68,7 +68,7 @@
             </select>
           </label>
           <label class="field">
-            <select class="field__select">
+            <select name="year" class="field__select">
               <option value="" disabled selected hidden>Рік випуску</option>
               <option>2024</option>
               <option>2023</option>
@@ -89,13 +89,13 @@
             </select>
           </label>
           <label class="field">
-            <input type="text" placeholder="Пробіг, км" class="field__input" />
+            <input type="text" name="mileage" placeholder="Пробіг, км" class="field__input" />
           </label>
           <label class="field field--phone">
             <span class="field__label-inside">Ваш телефон</span>
             <div class="field__phone-wrap">
               <span class="field__prefix">+38</span>
-              <input type="tel" placeholder="( _ _ _ ) _ _ _ - _ _ - _ _" class="field__input field__input--phone" required />
+              <input type="tel" name="phone" placeholder="( _ _ _ ) _ _ _ - _ _ - _ _" class="field__input field__input--phone" required />
             </div>
           </label>
           <button type="submit" class="btn btn--primary btn--full hero__form-btn">ОТРИМАТИ ОЦІНКУ</button>
