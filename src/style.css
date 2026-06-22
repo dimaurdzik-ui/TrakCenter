@@ -73,9 +73,11 @@ img { display: block; max-width: 100%; }
 }
 .logo__desc {
   font-family: var(--font);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--gray-600);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: var(--accent);
   white-space: nowrap;
 }
 
